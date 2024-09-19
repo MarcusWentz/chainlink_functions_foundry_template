@@ -31,7 +31,7 @@ https://www.youtube.com/watch?v=DJny2WlABAE
 
 ## Sending a request 
 
-:warning: For this example, let the Javascript argument values be:
+For this example, let the Javascript argument values be:
 ```javascript
 arg[0]=1
 ```
@@ -41,4 +41,12 @@ sendRequest(
     <subscriptionId_pointing_at_consumer_contract>,
     ["1"]
 )
+```
+
+## Deploy and verify contract
+```
+
+
+GettingStartedFunctionsConsumer
+
 ```

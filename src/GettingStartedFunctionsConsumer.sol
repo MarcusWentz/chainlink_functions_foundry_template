@@ -26,7 +26,7 @@ import {FunctionsRequest} from "chainlink/v0.8/functions/v1_0_0/libraries/Functi
  * @notice This is an example contract to show how to make HTTP requests using Chainlink
  * @dev This contract uses hardcoded values and should not be used in production.
  */
-contract FunctionsConsumer is FunctionsClient, ConfirmedOwner {
+contract GettingStartedFunctionsConsumer is FunctionsClient, ConfirmedOwner {
     using FunctionsRequest for FunctionsRequest.Request;
 
     // State variables to store the last request ID, response, and error
