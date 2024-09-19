@@ -45,8 +45,18 @@ sendRequest(
 
 ## Deploy and verify contract
 ```
-
-
-GettingStartedFunctionsConsumer
-
+forge create src/GettingStartedFunctionsConsumer.sol:GettingStartedFunctionsConsumer \
+--private-key $devTestnetPrivateKey \
+--rpc-url $sepoliaInfuraHttps \
+--etherscan-api-key $ETHERSCAN_API_KEY \
+--verify 
+```
+## Verify contract directly 
+```
+forge verify-contract \
+--chain-id 11155111 \
+--watch \
+--etherscan-api-key $etherscanApiKey \
+<sepolia_contract_address> \
+src/gasTests/timeChainlinkOracleTest.sol:timeChainlinkOracleTest
 ```
